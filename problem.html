@@ -154,13 +154,13 @@
 			display: none;
 		}
 		@media (max-width: 767px)/*Телефон*/ {
-		.my-text {
-    		display: none; /* изначально скрываем текст */
+			.my-text {
+    			display: none; /* изначально скрываем текст */
+  			}
+  			.my-button:focus + .my-text {
+    			display: block; /* при фокусе на кнопке показываем текст */
+  			}
   		}
-  		.my-button:focus + .my-text {
-    		display: block; /* при фокусе на кнопке показываем текст */
-  		}
-
 		#p1 {
   			font-size: 20px;
   			line-height: 1.6;
