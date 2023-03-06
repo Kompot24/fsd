@@ -55,6 +55,12 @@
 		}
 		/*Телефон*/ 
 		@media (max-width: 767px){
+		.my-text {
+    		display: none;
+  		}
+  		.my-button:focus + .my-text {
+    		display: block;
+  		}
 		#p1 {
   			font-size: 20px;
   			line-height: 1.6;
@@ -67,14 +73,15 @@
   			width: 767px; 
   			height: 1000px;
 		}
-		img[src="Images/global-nagrev.jpg"] {
-    		max-width: 25%;
-    		height: auto;
-		}
-		img[src="Images/gl-nagrev.jpg"] {
+		#p1 img {
     		max-width: 25%;
     		height: auto;
   		}
+		#p1 img[src="Images/global-nagrev.jpeg"], 
+  		#p1 img[src="Images/gl-nagrev.jpg"] {
+    		max-width: 25%;
+    		height: auto;
+    	}
 		#p2 {
   			font-size: 20px;
   			line-height: 1.6;
